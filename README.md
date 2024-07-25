@@ -1,7 +1,7 @@
 # Caption Craft: Automated Subtitle Generation
 
 ## Description
-Caption Craft is a two-part software tool developed at **VeriSoft** <br />
+Caption Craft is a two-part software tool developed at **VeriSoft**. <br />
 Caption Craft designed to automate the creation of subtitles for video files. It utilizes advanced AI models to transcribe audio to text and then format this text into SRT files. The project consists of a Python script for processing the video and audio, and a user-friendly GUI application for easy operation without needing to write any code.
 
 ## Features
