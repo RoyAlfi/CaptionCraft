@@ -16,7 +16,7 @@ class SRTApp(QMainWindow):
         self.initUI()
 
     def initUI(self):
-        self.setWindowTitle('SRT Subtitle Generator')
+        self.setWindowTitle('Caption Craft')
         self.setStyleSheet("background-color: #FBFCFD;")  # Light grey background
         self.setFixedSize(600, 350)  # Fixed window size
 
