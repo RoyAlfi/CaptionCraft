@@ -144,7 +144,7 @@ class SRTApp(QMainWindow):
             # Update the label with a truncated version of the filename if it's too long
             displayFileName = (fileName[:50] + '...') if len(fileName) > 53 else fileName
             self.statusLabel.setText(f'Selected File: {displayFileName}')
-            self.statusLabel.setFont(QFont(general_font, 14, QFont.Medium))
+            self.statusLabel.setFont(QFont(general_font, 10, QFont.Medium))
 
     def runScript(self):
         if not hasattr(self, 'filePath'):
