@@ -68,7 +68,8 @@ def transcribe_audio_to_srt(audio_path, video_file_path, model_name="small"):
 
 def open_folder(path):
     if sys.platform == "win32":
-        subprocess.run(['explorer', path], check=True)
+        path = path.replace('/', '\\')
+        subprocess.run(['explorer', path], check=False)
     elif sys.platform == "darwin":
         subprocess.run(['open', path], check=True)
     else:  # Assuming Linux
