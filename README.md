@@ -14,6 +14,7 @@ Caption Craft designed to automate the creation of subtitles for video files. It
 
 ### Prerequisites
 - [Python] 3.11 or higher
+- [ffmpeg](https://phoenixnap.com/kb/ffmpeg-windows), you can check the Installation manual in the line
 
 ### Setup
 1. Clone the repository:
