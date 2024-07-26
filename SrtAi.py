@@ -47,7 +47,7 @@ def transcribe_audio_to_srt(audio_path, video_file_path, model_name="small"):
     model = stable_whisper.load_model(model_name)
 
     
-    result = model.transcribe(audio_path, fp16=False, regroup=True, only_voice_freq=True, )
+    result = model.transcribe(audio_path, fp16=False, regroup=False, only_voice_freq=True, word_timestamps = False)
 
 
     srt_content = result.to_srt_vtt()
