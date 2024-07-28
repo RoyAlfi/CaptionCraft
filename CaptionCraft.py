@@ -25,7 +25,7 @@ class SRTApp(QMainWindow):
 
         # Status Label with custom font and padding
         self.statusLabel = QLabel('Select a file and model, then press "Run".', self)
-        self.statusLabel.setFont(QFont(general_font, 14, QFont.Medium))
+        self.statusLabel.setFont(QFont(general_font, 10, QFont.Medium))
         self.statusLabel.setAlignment(Qt.AlignCenter)
         self.statusLabel.setStyleSheet("padding: 10px; color: #071B29;")  # Dark grey text
         layout.addWidget(self.statusLabel)
@@ -37,7 +37,7 @@ class SRTApp(QMainWindow):
         """
         # Button to browse files with style
         self.btnBrowse = QPushButton('Browse File', self)
-        self.btnBrowse.setFont(QFont(general_font, 14))
+        self.btnBrowse.setFont(QFont(general_font, 10))
         self.btnBrowse.setStyleSheet("QPushButton { background-color: #193052; color: white; border-radius: 8px; padding: 12px; }"
                                      "QPushButton:hover { background-color: #192535; }")
         self.btnBrowse.clicked.connect(self.showFileDialog)
@@ -61,7 +61,7 @@ class SRTApp(QMainWindow):
 
         # Title
         dropdownTitleLabel = QLabel("Select Model:", self)  # Create a label for the dropdown title
-        dropdownTitleLabel.setFont(QFont(general_font, 14, QFont.Medium))  # Set font for the title
+        dropdownTitleLabel.setFont(QFont(general_font, 10, QFont.Medium))  # Set font for the title
         dropdownTitleLabel.setStyleSheet("padding: 10px; color: #071B29;")  # Dark grey text
         layout.addWidget(dropdownTitleLabel)  # Add the title label to the layout
 
@@ -83,7 +83,7 @@ class SRTApp(QMainWindow):
 
 
         self.modelDropdown.addItems(sorted_items)
-        self.modelDropdown.setFont(QFont(general_font, 16))  # Large, readable font
+        self.modelDropdown.setFont(QFont(general_font, 10))  # Large, readable font
 
         # Custom stylesheet for the dropdown
         self.modelDropdown.setStyleSheet("""
@@ -124,7 +124,7 @@ class SRTApp(QMainWindow):
         """
         # Run button with style and icon
         self.btnRun = QPushButton('Create subtitles!', self)
-        self.btnRun.setFont(QFont(general_font, 14))
+        self.btnRun.setFont(QFont(general_font, 12))
         self.btnRun.setStyleSheet("QPushButton { background-color: #28a745; color: white; border-radius: 8px; padding: 12px; }"
                                   "QPushButton:hover { background-color: #157B1B;}")
         self.btnRun.clicked.connect(self.runScript)
@@ -144,7 +144,7 @@ class SRTApp(QMainWindow):
             # Update the label with a truncated version of the filename if it's too long
             displayFileName = (fileName[:50] + '...') if len(fileName) > 53 else fileName
             self.statusLabel.setText(f'Selected File: {displayFileName}')
-            self.statusLabel.setFont(QFont(general_font, 10, QFont.Medium))
+            self.statusLabel.setFont(QFont(general_font, 8, QFont.Medium))
 
     def runScript(self):
         if not hasattr(self, 'filePath'):
