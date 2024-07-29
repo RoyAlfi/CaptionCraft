@@ -34,7 +34,7 @@ Caption Craft designed to automate the creation of subtitles for video files. It
 
 ### For Non-Technical Users
 1. Install [python] from this link.
-2. [Donload this project](https://github.com/RoyAlfi/CaptionCraft/archive/refs/heads/main.zip) and unzip it.
+2. [Download this project](https://github.com/RoyAlfi/CaptionCraft/archive/refs/heads/main.zip) and unzip it.
 3. Do steps 2,3 from 'Setup', easy setup will upload in the future.
 4. Open the `CaptionCraft.py` application.
 5. Use the "Browse File" button to select your video file.
