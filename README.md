@@ -19,7 +19,7 @@ Caption Craft designed to automate the creation of subtitles for video files. It
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/CaptionCraft.git
+   git clone https://github.com/RoyAlfi/CaptionCraft.git
    ```
 2. Navigate to the cloned directory:
    ```bash
